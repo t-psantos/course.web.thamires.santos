@@ -1,36 +1,81 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Um pouco de HTML</title>
+    <link rel="icon" href="img/icon.png">
   </head>
   <body>
-    <img src="img/capa.png">
+
+    <img src="img/capa.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa">
       <h1>HTML Básico</h1>
-      <p>E aí galera, beleza?<br><br>
-    Hoje nós iremos falar um pouquinho sobre a linguagem de programação mais difícil e mais complexa já vista
-    no mundo da programação...sim, estamos falando dele mesmo, o <strong>HTML</strong> :3 (<del>brinks</del>)<br><br>
-    O HTML é uma sigla para <em>Hyper Text Markup Language</em>, que em português significa "Linguagem de <mark>Marcação</mark> de Hipertexto",
-    que nada mais é do que a linguagem de marcação utilizada para a construção de páginas na Web, incluse esta foi inteiramente
-    escrita apenas em HTML. Legal, né?<br><br>
-    Como você pode ver, essa página não é tão bonita quanto a maioria dos sites, blogs e afins que estamos acostumados a ver por aí,
-    e isso porque o HTML é apenas o "esqueleto" de uma página. Para construirmos páginas mais bonitas precisamos da ajuda de um
-    mecanismo para adicionar estilo ao documento web, um cara chamado <sub>CSS</sub>. Mas calma que esse é um assunto para outro dia..."vamos por
-    partes" como diz Jack, o Estripador rsrs</p><hr>
-    <h2>Tags</h2>
-    As Tags, no HTML, são responsaveis por denotar uma marcação e quase sempre elas tem um início e um fim para que o navegador
-    possa renderizar a página. Elas são representadas pelos sinais de < (menor que) e > (maior que). <br><br>
-    O documento HTML, possui algumas tags que formam sua estrutura básica:<br><br>
-    <img src="img/corpo.png"><br><br><hr>
-    <h3>Tags de Título</h3>
-    As tags de títulos existem em seis níveis hierárquicos e são importantes para fins de otimização de SEO:<br><br>
-    <img src="img/tagstitulo.png"><br><br><hr>
-    <h3>Tags de Texto</h3>
-    Existem também as tags responsáveis por definir estilos de texto, fonte, formatos, parágrafos, etc. Eis as mais utilizadas:<br><br>
-    <img src="img/formatacao.png"><br><br><hr><br>
-  É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br><br>
-  Até a próxima!<br><br>
-  <img src="img/tchau.gif"><br><br><hr>
+        <p>E aí galera, beleza?<br/><br/>
+        Hoje nós iremos falar um pouquinho sobre a linguagem de programação mais difícil e mais complexa já vista no mundo da
+        programação...sim, estamos falando dele mesmo, o <strong>HTML</strong> :3 (<del>brinks</del>)<br/><br/>
+        O HTML é uma sigla para <em>Hyper Text Markup Language</em>, que em português significa "Linguagem de <mark>Marcação</mark>
+        de Hipertexto", que nada mais é do que a linguagem de marcação utilizada para a construção de páginas na Web, incluse esta
+        foi inteiramente escrita apenas em HTML. Legal, né?<br/><br/>
+        Como você pode ver, essa página não é tão bonita quanto a maioria dos sites, blogs e afins que estamos acostumados a ver
+        por aí, e isso porque o HTML é apenas o "esqueleto" de uma página. Para construirmos páginas mais bonitas precisamos da
+        ajuda de um mecanismo para adicionar estilo ao documento web, um cara chamado <sub>CSS</sub>. Mas calma que esse é um
+        assunto para outro dia..."vamos por partes" como diz Jack, o Estripador rsrs <br/>
+        Nesse artigo iremos falar sobre:<br/></p>
+
+        <ol>
+          <li><a href="#tags">Tags</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#links">Links</a></li>
+        </ol>
+        <hr/>
+
+      <h2>Tags<a name="tags"></h2>
+        As Tags, no HTML, são responsaveis por denotar uma marcação e quase sempre elas tem um início e um fim para que o navegador
+        possa renderizar a página. Elas são representadas pelos sinais de < (menor que) e > (maior que). <br/><br/>
+        O documento HTML, possui algumas tags que formam sua estrutura básica:<br/><br/>
+        <img src="img/corpo.png" title="tags HTML" alt="imagem representando estrutura basica do documento HTML"><br/><br/><hr/>
+
+      <h3>Tags de Título</h3>
+        As tags de títulos existem em seis níveis hierárquicos e são importantes para fins de otimização de SEO:<br/><br/>
+        <img src="img/tagstitulo.png" title="imagem representando hierarquia de títulos" alt="tags de hierarquia do h1 ao h6"><br/><br/><hr/>
+
+      <h3>Tags de Texto</h3>
+        Existem também as tags responsáveis por definir estilos de texto, fonte, formatos, parágrafos, etc. Eis as mais utilizadas:
+        <br/><br/>
+        <img src="img/formatacao.png" title="imagem representando as tags de formatacao" alt="lista de tags de formatação de Texto.
+        À esquerda uma lista em azul com as tags e do lado direito da imagem uma lista indicando o resultado da utilzação dessas tags"><br/><br/><hr/>
+
+      <h2>Listas<a name="listas"></h2>
+        No HTML, também é possível utilizar listas. Elas podem ser ordenadas ou não-ordenadas e são representadas pelas tags ol
+        (ordered list) e ul (unordered list), respectivamente. Cada item da lista é definido pela tag li (list item).<br/>
+        <img src="img/lista.png" title="tags de lista" alt="uma imagem indicando um exemplo da estrutura de lista ordenada no código"><br/>
+        As listas possuem atributos como o "start", que especifica o valor inicial para a ordem dos itens, o "reversed", que lista
+        do menos importante ao mais importante, e o "type" que indica o tipo da numeração. Os tipos de numeração são:
+        <ul>
+          <li>'A'</li>
+          <li>'a'</li>
+          <li>'i</li>
+          <li>'I'</li>
+          <li>e '1' (padrão)</li>
+        </ul><hr/>
+
+      <h2>Links<a name="links"></h2>
+        Os links, no HTML, são definidos pela tag "a" e sua sintaxe básica é:<br/><br/>
+        <img src="img/link.png" alt="imagem de exemplo de um link em html"><br/><br/>
+        Os principais atributos da tag, são:
+
+        <ol>
+          <li>href(para onde será direcionado)</li>
+          <li>target(como será redirecionado)</li>
+            <ul>
+              <li>_blank: abre a página em uma nova aba</li>
+              <li>_self: abre a página na mesma janela</li>
+              <li>_parent: abre a página na mesma janela do link</li>
+            </ul>
+        </ol><hr/><br/>
+
+
+        É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br><br>
+        Até a próxima!<br/><br/>
+        <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita">
 
   </body>
 </html>
