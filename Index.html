@@ -17,13 +17,14 @@
         Como você pode ver, essa página não é tão bonita quanto a maioria dos sites, blogs e afins que estamos acostumados a ver
         por aí, e isso porque o HTML é apenas o "esqueleto" de uma página. Para construirmos páginas mais bonitas precisamos da
         ajuda de um mecanismo para adicionar estilo ao documento web, um cara chamado <sub>CSS</sub>. Mas calma que esse é um
-        assunto para outro dia..."vamos por partes" como diz Jack, o Estripador rsrs <br/>
+        assunto para outro dia..."vamos por partes" como diz Jack, o Estripador rsrs <br/><br/>
         Nesse artigo iremos falar sobre:<br/></p>
 
         <ol>
           <li><a href="#tags">Tags</a></li>
           <li><a href="#listas">Listas</a></li>
           <li><a href="#links">Links</a></li>
+          <li><a href="#tabelas">Tabelas</a></li>
         </ol>
         <hr/>
 
@@ -60,7 +61,7 @@
       <h2>Links<a name="links"></h2>
         Os links, no HTML, são definidos pela tag "a" e sua sintaxe básica é:<br/><br/>
         <img src="img/link.png" alt="imagem de exemplo de um link em html"><br/><br/>
-        Os principais atributos da tag, são:
+        Os principais atributos da tag são:
 
         <ol>
           <li>href(para onde será direcionado)</li>
@@ -70,9 +71,59 @@
               <li>_self: abre a página na mesma janela</li>
               <li>_parent: abre a página na mesma janela do link</li>
             </ul>
-        </ol><hr/><br/>
+        </ol><hr/>
 
+        <h2>Tabelas<a name="tabelas"></h2>
+          Em HTML, as tabelas são definidas pela tag &lt;table&gt;. A tabela possui um cabeçalho(definido pela tag &lt;thead&gt;), um
+          corpo (&lt;tbody&gt;) e um rodapé(&lt;tfoot&gt;). Além disso, ela também contém linhas (&lt;tr&gt;) e dados (&lt;td&gt;). Uma célula de
+          dados pode conter texto, imagens, listas, parágrafos, formulários, tabelas, etc. <br/><br/>
 
+        <table border="1" width="50%">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">&lt;table&gt;</td>
+              <td>Define uma tabela</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;th&gt;</td>
+              <td>Define um cabeçalho de uma tabela</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;tr&gt;</td>
+              <td>Define uma linha de tabela </td>
+            </tr>
+            <tr>
+              <td align="center">&lt;td&gt;</td>
+              <td>Define uma célula de tabela</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;caption&gt;</td>
+              <td>Define um título</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;thead&gt;</td>
+              <td>Define um cabeçalho</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;tbody&gt;</td>
+              <td>Define o corpo de uma tabela</td>
+            </tr>
+            <tr>
+              <td align="center">&lt;tfoot&gt;</td>
+              <td>Define o rodapé(footer) de uma tabela</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table><br/>
+
+        <hr/><br/>
         É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br><br>
         Até a próxima!<br/><br/>
         <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita">
