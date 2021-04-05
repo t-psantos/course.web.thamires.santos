@@ -25,6 +25,7 @@
           <li><a href="#listas">Listas</a></li>
           <li><a href="#links">Links</a></li>
           <li><a href="#tabelas">Tabelas</a></li>
+          <li><a href="#forms">Formulários</a></li>
         </ol>
         <hr/>
 
@@ -121,10 +122,123 @@
           </tbody>
           <tfoot>
           </tfoot>
-        </table><br/>
+        </table>  <hr/><br/>
+
+        <h2>Formulários<a name="forms"></h2>
+          Os formulários são amplamente utilizados em páginas web, normalmente para coletar dados ou informações do usuário
+          seja para autenticação, cadastro, edição de dados etc. A tag &lt;form&gt; demarca um formulário e o atributo
+          &lt;action=""&gt; define o destino dos dados que serão inseridos pelo usuário.<br/>
+          <h3>Input</h3>
+          O &lt;input&gt; é a tag utilizada para a entrada de dados e possui atributos como: readonly, disabled, autofocus,
+          multiple, entre outros.<br/>
+          Normalmente os inputs possuem um tipo:<br/><br/>
+          <table width="70%">
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Type</th>
+                <th>Descrição</th>
+                <th>Visual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5">Texto</td>
+                <td>text</td>
+                <td>Input de texto(normalmente o mais utilizado)</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>password</td>
+                <td>Esconde o texto(utilizado normalmente para senhas)</td>
+                <td><input type="password"></td>
+              </tr>
+              <tr>
+                <td >email</td>
+                <td>Facilita a validação de emails e conta com preenchimento automático</td>
+                <td><input type="email"></td>
+              </tr>
+              <tr>
+                <td >search</td>
+                <td>Facilita facilita integrações com mecanismos de buscas</td>
+                <td><input type="search"></td>
+              </tr>
+              <tr>
+                <td >url</td>
+                <td>permite a inserção de uma URL (facilita validação e sugestões do browser)</td>
+                <td><input type="url"></td>
+              </tr>
+              <tr>
+                <td rowspan="5">Datas</td>
+                <td >date</td>
+                <td>campo de data com calendário</td>
+                <td><input type="date"></td>
+              </tr>
+              <tr>
+                <td >datetime-local</td>
+                <td>campo de data com calendário e horário</td>
+                <td><input type="datetime-local"></td>
+              </tr>
+              <tr>
+                <td >month</td>
+                <td>campo para seleção de um mês</td>
+                <td><input type="month"></td>
+              </tr>
+              <tr>
+                <td >time</td>
+                <td>permite selecionar um horário</td>
+                <td><input type="time"></td>
+              </tr>
+              <tr>
+                <td >week</td>
+                <td>seleciona uma semana(pelo número dela)</td>
+                <td><input type="week"></td>
+              </tr>
+              <tr>
+                <td rowspan="2">Números</td>
+                <td >range</td>
+                <td>seleção de range (volume, tamanho, quantidade, etc)</td>
+                <td><input type="range"></td>
+              </tr>
+              <tr>
+                <td >number</td>
+                <td>seleção de números</td>
+                <td><input type="number"></td>
+              </tr>
+              <tr>
+                <td rowspan="3">Outros</td>
+                <td >hidden</td>
+                <td>armazena valores úteis para a página</td>
+                <td><input type="hidden"></td>
+              </tr>
+              <tr>
+                <td >color</td>
+                <td>campo de seleção de cor em Hex ou RGB</td>
+                <td><input type="color"></td>
+              </tr>
+              <tr>
+                <td >file</td>
+                <td>envio de arquivos para servidor, como upload de fotos, etc</td>
+                <td><input type="file"></td>
+              </tr>
+              <tr>
+                <td rowspan="2">Botões</td>
+                <td >submit</td>
+                <td>faz o envio de todos os dados do formulário que estiver dentro da tag &lt;form&gt;</td>
+                <td><input type="submit"></td>
+              </tr>
+              <tr>
+                <td >button</td>
+                <td>envio de arquivos para servidor, como upload de fotos, etc</td>
+                <td><input type="button" value="Cancelar"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
 
         <hr/><br/>
-        É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br><br>
+        É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br/><br/>
         Até a próxima!<br/><br/>
         <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita">
 
