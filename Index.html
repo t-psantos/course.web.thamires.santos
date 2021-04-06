@@ -5,7 +5,7 @@
     <link rel="icon" href="img/icon.png">
   </head>
   <body>
-
+    <div id="pageIntroduction">
     <img src="img/capa.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa">
       <h1>HTML Básico</h1>
         <p>E aí galera, beleza?<br/><br/>
@@ -19,16 +19,18 @@
         ajuda de um mecanismo para adicionar estilo ao documento web, um cara chamado <sub>CSS</sub>. Mas calma que esse é um
         assunto para outro dia..."vamos por partes" como diz Jack, o Estripador rsrs <br/><br/>
         Nesse artigo iremos falar sobre:<br/></p>
+    </div>
+    <div id="summary">
+          <ol>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#forms">Formulários</a></li>
+          </ol>
+    </div><hr/>
 
-        <ol>
-          <li><a href="#tags">Tags</a></li>
-          <li><a href="#listas">Listas</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#tabelas">Tabelas</a></li>
-          <li><a href="#forms">Formulários</a></li>
-        </ol>
-        <hr/>
-
+    <div id="pageContent">
       <h2>Tags<a name="tags"></h2>
         As Tags, no HTML, são responsaveis por denotar uma marcação e quase sempre elas tem um início e um fim para que o navegador
         possa renderizar a página. Elas são representadas pelos sinais de < (menor que) e > (maior que). <br/><br/>
@@ -78,7 +80,7 @@
           Em HTML, as tabelas são definidas pela tag &lt;table&gt;. A tabela possui um cabeçalho(definido pela tag &lt;thead&gt;), um
           corpo (&lt;tbody&gt;) e um rodapé(&lt;tfoot&gt;). Além disso, ela também contém linhas (&lt;tr&gt;) e dados (&lt;td&gt;). Uma célula de
           dados pode conter texto, imagens, listas, parágrafos, formulários, tabelas, etc. <br/><br/>
-
+      <div id="tablesTags">
         <table border="1" width="50%">
           <thead>
             <tr>
@@ -122,7 +124,8 @@
           </tbody>
           <tfoot>
           </tfoot>
-        </table>  <hr/><br/>
+        </table>
+      </div>  <hr/><br/>
 
         <h2>Formulários<a name="forms"></h2>
           Os formulários são amplamente utilizados em páginas web, normalmente para coletar dados ou informações do usuário
@@ -132,6 +135,7 @@
           O &lt;input&gt; é a tag utilizada para a entrada de dados e possui atributos como: readonly, disabled, autofocus,
           multiple, entre outros.<br/>
           Normalmente os inputs possuem um tipo:<br/><br/>
+      <div id="tableForms">
           <table width="70%">
             <thead>
               <tr>
@@ -206,12 +210,35 @@
                 <td><input type="number"></td>
               </tr>
               <tr>
-                <td rowspan="3">Outros</td>
-                <td >hidden</td>
-                <td>armazena valores úteis para a página</td>
-                <td><input type="hidden"></td>
+                <td rowspan="3">Seleção</td>
+                <td >select</td>
+                <td>opções de seleção pré-definidos</td>
+                <td>
+                  <select id="tipoDocumento">
+                    <option value=""></option>
+                    <option value="rg">RG</option>
+                    <option value="ne">RNE</option>
+                  </select>
+                </td>
               </tr>
               <tr>
+                <td>checkbox</td>
+                <td>mutiseleção de opções</td>
+                <td>
+                  <input type="checkbox" id="chkOption"/><label for="chkOption">Opção 1</label>
+                  <input type="checkbox" id="chkOption2"/><label for="chkOption2">Opção 2</label>
+                </td>
+              </tr>
+              <tr>
+                <td>radio</td>
+                <td>seleção única</td>
+                <td>
+                  <input type="radio" id="rbtOption" name="rbtnOption"><label for="chkOption">Opção 1</label>
+                  <input type="radio" id="rbtOption2" name="rbtnOption"><label for="chkOption2">Opção 2</label>
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">Outros</td>
                 <td >color</td>
                 <td>campo de seleção de cor em Hex ou RGB</td>
                 <td><input type="color"></td>
@@ -222,21 +249,32 @@
                 <td><input type="file"></td>
               </tr>
               <tr>
-                <td rowspan="2">Botões</td>
+                <td rowspan="3">Botões</td>
                 <td >submit</td>
                 <td>faz o envio de todos os dados do formulário que estiver dentro da tag &lt;form&gt;</td>
                 <td><input type="submit"></td>
               </tr>
               <tr>
                 <td >button</td>
-                <td>envio de arquivos para servidor, como upload de fotos, etc</td>
-                <td><input type="button" value="Cancelar"></td>
+                <td>cria um botão genérico</td>
+                <td><input type="button" value="Botão Genérico"></td>
+              </tr>
+              <tr>
+                <td >reset</td>
+                <td>limpa todos os campos preenchidos</td>
+                <td><input type="reset"></td>
               </tr>
             </tbody>
             <tfoot>
             </tfoot>
           </table>
+        </div><br/>
 
+          &#x26A0; Importante! &#x26A0; </br>
+          Apesar de ser comum ver os inputs do tipo "button", é uma boa prática utilizar a tag &lt;button&gt;&lt;/button&gt;
+          caso você queira adicionar botões em sua página. Isso porque dessa forma os mecanismos de busca conseguem "rankear" melhor a
+          sua página.
+      </div>
         <hr/><br/>
         É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br/><br/>
         Até a próxima!<br/><br/>
