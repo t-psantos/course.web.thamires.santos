@@ -5,9 +5,28 @@
     <link rel="icon" href="img/icon.png">
   </head>
   <body>
-    <div id="pageIntroduction">
-    <img src="img/capa.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa">
-      <h1>HTML Básico</h1>
+    <header>
+      <img src="img/capa.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa">
+    </header>
+      <table>
+    <tr>
+      <td valign=top width="12%">
+        <nav>
+              <ul><br/><br/>
+                Menu <br/><br/>
+                <li><a href="#tags">Tags</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#forms">Formulários</a></li>
+                <li><a href="#midias">Mídias</a></li>
+              </ul>
+        </nav>
+      </td>
+      <td>
+    <section>
+      <h1>HTML - Introdução</h1>
+      <article>
         <p>E aí galera, beleza?<br/><br/>
         Hoje nós iremos falar um pouquinho sobre a linguagem de programação mais difícil e mais complexa já vista no mundo da
         programação...sim, estamos falando dele mesmo, o <strong>HTML</strong> :3 (<del>brinks</del>)<br/><br/>
@@ -19,19 +38,8 @@
         ajuda de um mecanismo para adicionar estilo ao documento web, um cara chamado <sub>CSS</sub>. Mas calma que esse é um
         assunto para outro dia..."vamos por partes" como diz Jack, o Estripador rsrs <br/><br/>
         Nesse artigo iremos falar sobre:<br/></p>
-    </div>
-    <div id="summary">
-          <ol>
-            <li><a href="#tags">Tags</a></li>
-            <li><a href="#listas">Listas</a></li>
-            <li><a href="#links">Links</a></li>
-            <li><a href="#tabelas">Tabelas</a></li>
-            <li><a href="#forms">Formulários</a></li>
-          </ol>
-    </div><hr/>
 
-    <div id="pageContent">
-      <h2>Tags<a name="tags"></h2>
+       <h2>Tags<a name="tags"></h2>
         As Tags, no HTML, são responsaveis por denotar uma marcação e quase sempre elas tem um início e um fim para que o navegador
         possa renderizar a página. Elas são representadas pelos sinais de < (menor que) e > (maior que). <br/><br/>
         O documento HTML, possui algumas tags que formam sua estrutura básica:<br/><br/>
@@ -75,210 +83,267 @@
               <li>_parent: abre a página na mesma janela do link</li>
             </ul>
         </ol><hr/>
+     </article>
+   </section>
 
-        <h2>Tabelas<a name="tabelas"></h2>
-          Em HTML, as tabelas são definidas pela tag &lt;table&gt;. A tabela possui um cabeçalho(definido pela tag &lt;thead&gt;), um
-          corpo (&lt;tbody&gt;) e um rodapé(&lt;tfoot&gt;). Além disso, ela também contém linhas (&lt;tr&gt;) e dados (&lt;td&gt;). Uma célula de
-          dados pode conter texto, imagens, listas, parágrafos, formulários, tabelas, etc. <br/><br/>
-      <div id="tablesTags">
-        <table border="1" width="50%">
-          <thead>
-            <tr>
-              <th>Tag</th>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td align="center">&lt;table&gt;</td>
-              <td>Define uma tabela</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;th&gt;</td>
-              <td>Define um cabeçalho de uma tabela</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;tr&gt;</td>
-              <td>Define uma linha de tabela </td>
-            </tr>
-            <tr>
-              <td align="center">&lt;td&gt;</td>
-              <td>Define uma célula de tabela</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;caption&gt;</td>
-              <td>Define um título</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;thead&gt;</td>
-              <td>Define um cabeçalho</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;tbody&gt;</td>
-              <td>Define o corpo de uma tabela</td>
-            </tr>
-            <tr>
-              <td align="center">&lt;tfoot&gt;</td>
-              <td>Define o rodapé(footer) de uma tabela</td>
-            </tr>
-          </tbody>
-          <tfoot>
-          </tfoot>
-        </table>
-      </div>  <hr/><br/>
 
-        <h2>Formulários<a name="forms"></h2>
-          Os formulários são amplamente utilizados em páginas web, normalmente para coletar dados ou informações do usuário
-          seja para autenticação, cadastro, edição de dados etc. A tag &lt;form&gt; demarca um formulário e o atributo
-          &lt;action=""&gt; define o destino dos dados que serão inseridos pelo usuário.<br/>
-          <h3>Input</h3>
-          O &lt;input&gt; é a tag utilizada para a entrada de dados e possui atributos como: readonly, disabled, autofocus,
-          multiple, entre outros.<br/>
-          Normalmente os inputs possuem um tipo:<br/><br/>
-      <div id="tableForms">
-          <table width="70%">
-            <thead>
-              <tr>
-                <th>Categoria</th>
-                <th>Type</th>
-                <th>Descrição</th>
-                <th>Visual</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="5">Texto</td>
-                <td>text</td>
-                <td>Input de texto(normalmente o mais utilizado)</td>
-                <td><input type="text"></td>
-              </tr>
-              <tr>
-                <td>password</td>
-                <td>Esconde o texto(utilizado normalmente para senhas)</td>
-                <td><input type="password"></td>
-              </tr>
-              <tr>
-                <td >email</td>
-                <td>Facilita a validação de emails e conta com preenchimento automático</td>
-                <td><input type="email"></td>
-              </tr>
-              <tr>
-                <td >search</td>
-                <td>Facilita facilita integrações com mecanismos de buscas</td>
-                <td><input type="search"></td>
-              </tr>
-              <tr>
-                <td >url</td>
-                <td>permite a inserção de uma URL (facilita validação e sugestões do browser)</td>
-                <td><input type="url"></td>
-              </tr>
-              <tr>
-                <td rowspan="5">Datas</td>
-                <td >date</td>
-                <td>campo de data com calendário</td>
-                <td><input type="date"></td>
-              </tr>
-              <tr>
-                <td >datetime-local</td>
-                <td>campo de data com calendário e horário</td>
-                <td><input type="datetime-local"></td>
-              </tr>
-              <tr>
-                <td >month</td>
-                <td>campo para seleção de um mês</td>
-                <td><input type="month"></td>
-              </tr>
-              <tr>
-                <td >time</td>
-                <td>permite selecionar um horário</td>
-                <td><input type="time"></td>
-              </tr>
-              <tr>
-                <td >week</td>
-                <td>seleciona uma semana(pelo número dela)</td>
-                <td><input type="week"></td>
-              </tr>
-              <tr>
-                <td rowspan="2">Números</td>
-                <td >range</td>
-                <td>seleção de range (volume, tamanho, quantidade, etc)</td>
-                <td><input type="range"></td>
-              </tr>
-              <tr>
-                <td >number</td>
-                <td>seleção de números</td>
-                <td><input type="number"></td>
-              </tr>
-              <tr>
-                <td rowspan="3">Seleção</td>
-                <td >select</td>
-                <td>opções de seleção pré-definidos</td>
-                <td>
-                  <select id="tipoDocumento">
-                    <option value=""></option>
-                    <option value="rg">RG</option>
-                    <option value="ne">RNE</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>checkbox</td>
-                <td>mutiseleção de opções</td>
-                <td>
-                  <input type="checkbox" id="chkOption"/><label for="chkOption">Opção 1</label>
-                  <input type="checkbox" id="chkOption2"/><label for="chkOption2">Opção 2</label>
-                </td>
-              </tr>
-              <tr>
-                <td>radio</td>
-                <td>seleção única</td>
-                <td>
-                  <input type="radio" id="rbtOption" name="rbtnOption"><label for="chkOption">Opção 1</label>
-                  <input type="radio" id="rbtOption2" name="rbtnOption"><label for="chkOption2">Opção 2</label>
-                </td>
-              </tr>
-              <tr>
-                <td rowspan="2">Outros</td>
-                <td >color</td>
-                <td>campo de seleção de cor em Hex ou RGB</td>
-                <td><input type="color"></td>
-              </tr>
-              <tr>
-                <td >file</td>
-                <td>envio de arquivos para servidor, como upload de fotos, etc</td>
-                <td><input type="file"></td>
-              </tr>
-              <tr>
-                <td rowspan="3">Botões</td>
-                <td >submit</td>
-                <td>faz o envio de todos os dados do formulário que estiver dentro da tag &lt;form&gt;</td>
-                <td><input type="submit"></td>
-              </tr>
-              <tr>
-                <td >button</td>
-                <td>cria um botão genérico</td>
-                <td><input type="button" value="Botão Genérico"></td>
-              </tr>
-              <tr>
-                <td >reset</td>
-                <td>limpa todos os campos preenchidos</td>
-                <td><input type="reset"></td>
-              </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-          </table>
-        </div><br/>
+   <section>
+     <header> <h2>Tabelas<a name="tabelas"></h2>  </header>
+   <article>
+     Em HTML, as tabelas são definidas pela tag &lt;table&gt;. A tabela possui um cabeçalho(definido pela tag &lt;thead&gt;), um
+     corpo (&lt;tbody&gt;) e um rodapé(&lt;tfoot&gt;). Além disso, ela também contém linhas (&lt;tr&gt;) e dados (&lt;td&gt;). Uma célula de
+     dados pode conter texto, imagens, listas, parágrafos, formulários, tabelas, etc. <br/><br/>
+   <table border="1" width="50%">
+     <thead>
+       <tr>
+         <th>Tag</th>
+         <th>Descrição</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td align="center">&lt;table&gt;</td>
+         <td>Define uma tabela</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;th&gt;</td>
+         <td>Define um cabeçalho de uma tabela</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;tr&gt;</td>
+         <td>Define uma linha de tabela </td>
+       </tr>
+       <tr>
+         <td align="center">&lt;td&gt;</td>
+         <td>Define uma célula de tabela</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;caption&gt;</td>
+         <td>Define um título</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;thead&gt;</td>
+         <td>Define um cabeçalho</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;tbody&gt;</td>
+         <td>Define o corpo de uma tabela</td>
+       </tr>
+       <tr>
+         <td align="center">&lt;tfoot&gt;</td>
+         <td>Define o rodapé(footer) de uma tabela</td>
+       </tr>
+     </tbody>
+     <tfoot>
+     </tfoot>
+   </table>
+   </article>
+  </section> <hr/><br/>
 
-          &#x26A0; Importante! &#x26A0; </br>
-          Apesar de ser comum ver os inputs do tipo "button", é uma boa prática utilizar a tag &lt;button&gt;&lt;/button&gt;
-          caso você queira adicionar botões em sua página. Isso porque dessa forma os mecanismos de busca conseguem "rankear" melhor a
-          sua página.
-      </div>
-        <hr/><br/>
-        É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br/><br/>
-        Até a próxima!<br/><br/>
-        <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita">
+  <section>
+    <header> <h2>Formulários<a name="forms"></h2> </header>
+  </section>
+  <article>
+    Os formulários são amplamente utilizados em páginas web, normalmente para coletar dados ou informações do usuário
+    seja para autenticação, cadastro, edição de dados etc. A tag &lt;form&gt; demarca um formulário e o atributo
+    &lt;action=""&gt; define o destino dos dados que serão inseridos pelo usuário.<br/>
+    <h3>Input</h3>
+    O &lt;input&gt; é a tag utilizada para a entrada de dados e possui atributos como: readonly, disabled, autofocus,
+    multiple, entre outros.<br/>
+    Normalmente os inputs possuem um tipo:<br/><br/>
+    <table width="70%">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Type</th>
+          <th>Descrição</th>
+          <th>Visual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="5">Texto</td>
+          <td>text</td>
+          <td>Input de texto(normalmente o mais utilizado)</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>Esconde o texto(utilizado normalmente para senhas)</td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td >email</td>
+          <td>Facilita a validação de emails e conta com preenchimento automático</td>
+          <td><input type="email"></td>
+        </tr>
+        <tr>
+          <td >search</td>
+          <td>Facilita facilita integrações com mecanismos de buscas</td>
+          <td><input type="search"></td>
+        </tr>
+        <tr>
+          <td >url</td>
+          <td>permite a inserção de uma URL (facilita validação e sugestões do browser)</td>
+          <td><input type="url"></td>
+        </tr>
+        <tr>
+          <td rowspan="5">Datas</td>
+          <td >date</td>
+          <td>campo de data com calendário</td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td >datetime-local</td>
+          <td>campo de data com calendário e horário</td>
+          <td><input type="datetime-local"></td>
+        </tr>
+        <tr>
+          <td >month</td>
+          <td>campo para seleção de um mês</td>
+          <td><input type="month"></td>
+        </tr>
+        <tr>
+          <td >time</td>
+          <td>permite selecionar um horário</td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td >week</td>
+          <td>seleciona uma semana(pelo número dela)</td>
+          <td><input type="week"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Números</td>
+          <td >range</td>
+          <td>seleção de range (volume, tamanho, quantidade, etc)</td>
+          <td><input type="range"></td>
+        </tr>
+        <tr>
+          <td >number</td>
+          <td>seleção de números</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td rowspan="3">Seleção</td>
+          <td >select</td>
+          <td>opções de seleção pré-definidos</td>
+          <td>
+            <select id="tipoDocumento">
+              <option value=""></option>
+              <option value="rg">RG</option>
+              <option value="ne">RNE</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>checkbox</td>
+          <td>mutiseleção de opções</td>
+          <td>
+            <input type="checkbox" id="chkOption"/><label for="chkOption">Opção 1</label>
+            <input type="checkbox" id="chkOption2"/><label for="chkOption2">Opção 2</label>
+          </td>
+        </tr>
+        <tr>
+          <td>radio</td>
+          <td>seleção única</td>
+          <td>
+            <input type="radio" id="rbtOption" name="rbtnOption"><label for="chkOption">Opção 1</label>
+            <input type="radio" id="rbtOption2" name="rbtnOption"><label for="chkOption2">Opção 2</label>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">Outros</td>
+          <td >color</td>
+          <td>campo de seleção de cor em Hex ou RGB</td>
+          <td><input type="color"></td>
+        </tr>
+        <tr>
+          <td >file</td>
+          <td>envio de arquivos para servidor, como upload de fotos, etc</td>
+          <td><input type="file"></td>
+        </tr>
+        <tr>
+          <td rowspan="3">Botões</td>
+          <td >submit</td>
+          <td>faz o envio de todos os dados do formulário que estiver dentro da tag &lt;form&gt;</td>
+          <td><input type="submit"></td>
+        </tr>
+        <tr>
+          <td >button</td>
+          <td>cria um botão genérico</td>
+          <td><input type="button" value="Botão Genérico"></td>
+        </tr>
+        <tr>
+          <td >reset</td>
+          <td>limpa todos os campos preenchidos</td>
+          <td><input type="reset"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </article> <br/>
 
+  <div class="important">
+    &#x26A0; Importante! &#x26A0; </br>
+    Apesar de ser comum ver os inputs do tipo "button", é uma boa prática utilizar a tag &lt;button&gt;&lt;/button&gt;
+    caso você queira adicionar botões em sua página. Isso porque dessa forma os mecanismos de busca conseguem "rankear" melhor a
+    sua página.
+  </div> <hr/>
+
+  <section>
+    <header> <h2>Mídias<a name="midias"></h2>    </header>
+    <article>
+      Muitas vezes, dependendo do conteúdo que você deseja apresentar em sua página, se faz necessário o uso de mídias (vídeos
+      e áudios, por exemplo) e por isso é importante saber como utilizá-las. <br/>
+
+      <h3>Áudios</h3>
+      No geral, para adicionar áudio utilizamos a tag &lt;audio&lt; onde "controls" mostra os controles e "type" define o tipo.<br/><br/>
+               <audio controls>
+                   <source src="media/negro_drama.mp3" type="audio/ogg" />
+                   <source src="media/negro_drama.mp3" type="audio/mp3" />
+                   Seu browser não suporta este formato de áudio!
+               </audio><br/><br/>
+      O código ficaria assim: <br/><br/>
+      &lt;audio controls&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;source src="caminho_do_arquivo_de_audio" type="tipo/formato"&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;source src="caminho_do_arquivo_de_audio" type="tipo/outroformato"&gt;<br/>
+          &nbsp;&nbsp;&nbsp;Seu browser não suporta este formato de áudio!<br/>
+      &lt;audio&gt;<br/><br/>
+
+      <h3>Vídeos</h3>
+      Como você deve estar imaginando, para vídeos utilizamos a tag &lt;video&gt; indicando a URL do vídeo com a tag source,
+      exatamente como para inserir áudios.<br/>
+      Caso você prefira utilizar um vídeo diretamente do YouTube por exemplo, é somente buscar o vídeo na plataforma, clicar
+      em "compartilhar", selecionar a opção "incorporar", copiar o código e inserir no seu! <br/><br/>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iZ1ucWosOww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+
+      <h3>Mapas</h3>
+      A utilização de mapas também é bem comum em páginas web e esse recurso não poderia ficar de fora da nossa aulinha, né? :3<br/>
+      Para adicionar uma localização seguimos um caminho bastante parecido com o citado na parte de vídeos. É somente acessar o
+      Google Maps na opção desejada, clicar em "compartilhar", em seguida "incorporar", copiar o código html, inserir no seu e voilà.<br/><br/>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14635.201414829475!2d-46.84448!3d-23.5036995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b3acf72c69b6310!2sInmetrics!5e0!3m2!1spt-BR!2sbr!4v1617757071203!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </article>
+  </section><hr/> <br/>
+
+  <div class="end">
+    É isso pessoal, por hoje encerramos nossa aulinha introdutória de HTML :) <br/><br/>
+    Até a próxima!<br/><br/>
+    <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita">
+  </div>
+</tr>
+
+
+    <tr>
+    <td align="center">
+      <footer>&copy; 2021 Copyright.</footer>
+    </td>
+    </tr>
+
+
+      </table>
   </body>
 </html>
