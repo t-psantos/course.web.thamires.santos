@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guia de CSS Básico</title>
+
+    <meta charset="utf-8">
+    <meta name="Tutorial de CSS" content="Tutorial básico apresentando os principais conceitos das linguagens e como aplicá-las">
+    <meta name="keywords" content="HTML, CSS, Links, Tabelas, formulários">
+
+    <link rel="icon" href="img/icon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <img src="img/capa-css.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa"/>
+
+        <!--
+        <img src="img/codeCharmoso.png" width="200px" height="70px" title="logotipo da página" alt="retangulo de borda espessa preta com uma divisória.
+        Em seu lado esquerdo o fundo é branco e em destaque está a letra "C" em azul. Do lado direito o fundo é preto com
+        a escrita "codeCharmoso" em branco"/><br/><br/>
+                  <div id="menu" align="right">
+                    <a href="tutoriais.html">Tutoriais</a> |
+                    <a href="sobre.html">Sobre</a> |
+                    <a href="contato.html">Contato</a>
+                  </div>
+        -->
+      </nav>
+    </header>
+
+    <section>
+      <header> <h1>Introdução</h1> </header>
+      <article>
+      <p>E aí, beleza?<br/><br/>
+      Depois do nosso <a href="index.html">guia sobre HTML</a>, chegou o momento de falarmos sobre o CSS. Sigla para
+      <span class="italic">Cascading Style Sheets</span>(Estilo de Folhas em Cascata), o CSS é o mecanismo de estilo responsável
+      pela parte visual dos documentos web, ou seja, é graças a ele que podemos fazer layouts bonitos.<br/><br/>
+      Nesse artigo iremos abordar os seguintes tópicos:</p>
+      <ul>
+        <li><a href="#adicionando">Como utilizar o CSS</a></li>
+        <li><a href="#elementos">Elementos</a></li>
+        <li><a href="#propriedades">Principais Propriedades</a></li>
+        <li><a href="#fontes">Visão geral sobre as fontes</a></li>
+        <li><a href="#colors">Escolhendo as cores</a></li>
+      </ul>
+    </article>
+    </section>
+
+    <section>
+      <header> <h2>Como utilizar<a name="adicionando"/></h2> </header>
+      Você pode utilizar o CSS de três maneiras: em linha, de forma interna ou externa - nessa prioridade, respectivamente.<br/>
+      <ul>
+        <li>Inline - Utilizado na própria tag;</li>
+        <li>Interno - Você define uma tag &lt;style&gt; dentro do documento HTML;</li>
+        <li>Externo - Cria-se um arquivo de extensão .css que será chamado pelo documento HTML.</li>
+      </ul>
+    </section>
+
+    <section>
+      <header> <h2>Elementos<a name="estrutura"/></h2> </header>
+      <article>
+        Os elementos básicos são as Tags HTML, #id e .classe.<br/><br/>
+        A estrutura básica de um código CSS é definida por:<br/><br/>
+        <img src="img/css.png" title="Estrutura Básica CSS" alt="imagem representando estrutura basica de um código CSS"/><br/><br/><hr/>
+      </article>
+    </section>
+
+    <section>
+      <header> <h2>Principais Propriedades<a name="propriedades"/></h2> </header>
+      <article>
+        Existem diversas propriedades que podemos alterar no CSS, algumas delas são: background, font, text, border, margin, padding, width, height, etc.<br/><br/><hr/>
+      </article>
+    </section>
+
+    <section>
+      <header><h2>Fontes<a name="fontes"/></h2></header>
+      A definição das fontes é um assunto importante quando estamos tratando de definição de estilo, isso porque as fontes dizem
+      muito sobre nós e por isso ela deve ser condizente com a ideia que queremos passar. Por exemplo, esse é um artigo mais
+      descontraído voltado para entendimento básico de alguns conceitos relacionados a programação. Imagina se a fonte desse site
+      fosse em letra cursiva? Estranho, certo?<br/><br/>
+      Partindo desse ponto, podemos classificar as fontes mais comuns, a imagem que passam e onde normalmente as encontramos:<br/><br/>
+
+      <div class="table">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Fonte</th>
+              <th>Características</th>
+              <th>Psicologia</th>
+              <th>Onde é mais usada</th>
+              <th>Marcas que utilizam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Serifada</td>
+              <td>Pés nas letras(serifas)</td>
+              <td>Seriedade, tradição, respeito, confiança</td>
+              <td>Livros, textos longos</td>
+              <td>Zara, Tiffany & Co, Madero</td>
+            </tr>
+            <tr>
+              <td>Não-serifada</td>
+              <td>Linhas retas e simples</td>
+              <td>Clareza, jovialidade, refinado</td>
+              <td>Sites, logotipos(principalmente de startups)</td>
+              <td>LinkedIn, Calvin Klein, YouTube</td>
+            </tr>
+            <tr>
+              <td>Cursiva</td>
+              <td>Semelhante à caligrafia, caracóis</td>
+              <td>Elegância, artístico, liberdade</td>
+              <td>Cartas, logotipos</td>
+              <td>Coca-Cola, Instagram, Cadillac</td>
+            </tr>
+            <tr>
+              <td>Cômicas</td>
+              <td>Tipos únicos e atraentes</td>
+              <td>Singularidade, originalidade, divertido, criativo</td>
+              <td>Logotipos, quadrinhos propaganda</td>
+              <td>Fanta, Marvel, Rihappy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section><br/><br/><hr>
+
+    <section>
+      <header> <h2>Escolhendo as cores<a name="cores"/></h2> </header>
+      <article>
+        Escolher a paleta de cores do seu site a princípio pode ser uma tarefa difícil, isso porque temos uma infinidade de cores
+        disponíveis e assim como as fontes, elas criam uma conexão visual e definem a identidade do seu site. Portanto, é importante
+        que você faça essa escolha tendo em mente a imagem e as emoções que você quer passar ao seu visitante.<br/><br/>
+        Esse tema é um tanto complexo e demanda um conhecimento profundo a respeito da psicologia por trás das cores e como nosso
+        cérebro as percebem. Embora eu não seja nenhuma expert sobre esse assunto, separei algumas cores e a que normalmente elas são
+        associadas baseada em diversos estudos: <br/><br/>
+
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Cor</th>
+                <th>Associação</th>
+              </tr>
+              <tr>
+                <td>Vermelho</td>
+                <td>Energia, Paixão, Romance, Calor, Romance</td>
+              </tr>
+              <tr>
+                <td>Branco</td>
+                <td>Pureza, Inocência, Juventude, clareza</td>
+              </tr>
+              <tr>
+                <td>Amarelo</td>
+                <td>Alegria, Felicidade, Positividade, Amigável</td>
+              </tr>
+              <tr>
+                <td>Laranja</td>
+                <td>Entusiasmo, Cordialidade, Jovialidade</td>
+              </tr>
+            </thead>
+          </table>
+        </div><br/>
+
+        Existem também alguns sites bem interessantes que podem te ajudar na escolha das cores como: <a href="https://coolors.co/" target="_blank">Coolors</a>,
+        <a href="https://picular.co/" target="_blank"> Picular</a>, <a href="https://color.adobe.com/pt/create/image" target="_blank">Color Adobe</a>,
+        <a href="https://contrastchecker.com/" target="_blank">ContrastChecker</a> entre outros.
+
+        </article>
+    </section>
+
+    <div class="finalContent">
+      É isso pessoal, por hoje encerramos nossa aulinha de CSS :) <br/><br/>
+      Até a próxima!<br/><br/>
+      <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita"/>
+    </div>
+
+    <footer>&copy; 2021 Copyright.</footer>
+
+
+
+  </body>
+</html>
