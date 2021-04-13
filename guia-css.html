@@ -14,26 +14,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
   </head>
 
+
   <body>
-
-    <header>
-      <nav>
-        <img src="img/capa-css.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa"/>
-
-        <!--
-        <img src="img/codeCharmoso.png" width="200px" height="70px" title="logotipo da página" alt="retangulo de borda espessa preta com uma divisória.
-        Em seu lado esquerdo o fundo é branco e em destaque está a letra "C" em azul. Do lado direito o fundo é preto com
-        a escrita "codeCharmoso" em branco"/><br/><br/>
-                  <div id="menu" align="right">
+      <header>
+        <nav id="navBar">
+          <img src="img/codeCharmoso.png" width="170px" height="40px" title="logotipo da página" alt="retangulo de borda espessa preta com uma divisória.
+          Em seu lado esquerdo o fundo é branco e em destaque está a letra "C" em azul. Do lado direito o fundo é preto com
+          a escrita "codeCharmoso" em branco"/><br/><br/>
+                <div id="menu" class="text-overlay">
                     <a href="tutoriais.html">Tutoriais</a> |
                     <a href="sobre.html">Sobre</a> |
                     <a href="contato.html">Contato</a>
-                  </div>
-        -->
-      </nav>
-    </header>
+                </div>
+        </nav>
+        <div class="cover">
+          <img src="img/capa-css.png" title="imagem de capa do site" alt="uma imagem de fundo clara com algumas tags HTML na cor roxa"/>
+        </div>
+      </header>
 
-    <section>
+    <div id="contentPage">
+    <section class="content">
       <header> <h1>Introdução</h1> </header>
       <article>
       <p>E aí, beleza?<br/><br/>
@@ -49,7 +49,6 @@
         <li><a href="#colors">Escolhendo as cores</a></li>
       </ul>
     </article>
-    </section>
 
     <section>
       <header> <h2>Como utilizar<a name="adicionando"/></h2> </header>
@@ -179,10 +178,12 @@
       Até a próxima!<br/><br/>
       <img src="img/tchau.gif" title="gif engraçada" alt="uma gif do personagem Homer Simpsons sumindo entre uma moita"/>
     </div>
+  </div>
 
-    <footer>&copy; 2021 Copyright.</footer>
-
-
+    <footer>
+      <div id="footer">
+        &copy; 2021 Copyright.
+      </div></footer>
 
   </body>
 </html>

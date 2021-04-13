@@ -1,6 +1,9 @@
 html, body{
   font-family: 'Rubik', sans-serif;
-  background: #E0E1DD;
+  margin: 0px;
+  padding: 0px;
+  /*background-image: linear-gradient(to bottom, #e1e7eb, #e7ecf0, #edf0f5, #f3f5fa, #f9f9ff);*/
+  background: linear-gradient(180deg, hsla(214, 15%, 64%, 1) 0%, hsla(75, 6%, 87%, 1) 50%, hsla(231, 24%, 89%, 1) 100%);
 }
 
 .strong{
@@ -13,4 +16,41 @@ html, body{
 
 .scratched{
   text-decoration: line-through;
+}
+
+#navBar {
+  border: 1px solid;
+  padding: 20px 10px 10px 10px ;
+  background: #031d44;
+}
+
+#menu {
+  margin: -50px 100px 15px;
+  text-align: right;
+}
+
+.text-overlay{
+    font: normal normal 300 1em/1em "Rubik";
+    color: #E0E1DD;
+}
+.cover{
+  padding: 20px;
+  text-align: center;
+}
+
+#contentPage{
+  padding: 20px 170px 20px 170px;
+  text-align: justify;
+}
+
+.content{
+  background: #fff;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+#footer{
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
 }
