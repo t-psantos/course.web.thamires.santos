@@ -28,3 +28,8 @@ html, body{
 #comic td{
   font-family: "Comic Sans MS", comic;
 }
+
+p a{
+  text-decoration: none;
+  color: var(--color-links);
+}

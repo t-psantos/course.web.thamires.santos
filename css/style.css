@@ -1,8 +1,9 @@
 :root {
-  --color-links: #778da9;
+  --background-color-navbar-and-footer: linear-gradient(90deg, rgba(2,1,24,1) 0%, rgba(7,7,48,1) 54%, rgba(7,40,47,1) 100%);
   --padding-cover-default: 20px;
   --margin-cover-default: 30px 80px 0px 80px;
   --text-align-cover: center;
+  --color-links: #778da9;
 }
 
 html, body{
@@ -13,12 +14,12 @@ html, body{
 }
 
 #navbar {
-  padding: 10px 10px 10px 20px ;
-  background: linear-gradient(90deg, rgba(2,1,24,1) 0%, rgba(7,7,48,1) 54%, rgba(7,40,47,1) 100%);
+  padding: 15px 10px 15px 40px ;
+  background: var(--background-color-navbar-and-footer);
 }
 
 #menu {
-  margin: -50px 100px 10px;
+  margin: -30px 100px 10px;
   text-align: right;
   font: normal normal 500 1em/1em "Rubik";
   color: var(--color-links);
@@ -86,7 +87,11 @@ nav #menu a:hover{
 #footer{
   text-align: center;
   padding: 10px;
-  margin-top: -10px;
+  margin-top: -20px;
+  background: blue;
+  font-size: 0.9em;
+  background: var(--background-color-navbar-and-footer);
+  color: #fff;
 }
 
 ul li a{

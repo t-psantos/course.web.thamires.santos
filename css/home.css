@@ -1,0 +1,54 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background: url('');
+}
+
+.clear {
+  clear: both;
+}
+
+#main {
+  background: #fff;
+}
+
+#cover-home {
+  border-radius: 200px;
+  background: url('https://image.freepik.com/vetores-gratis/ilustracao-em-vetor-conceito-abstrato-de-equipe-devops-membro-da-equipe-de-desenvolvimento-de-software-fluxo-de-trabalho-agil-modelo-de-equipe-devops-trabalho-em-equipe-de-ti-gerenciamento-de-projetos-metafora-abstrata-de-pratica-integrada_335657-2299.jpg') no-repeat center;
+  padding: 210px;
+  margin: 30px 400px;
+
+}
+
+#main-container {
+  align-items: center;
+  margin-top: 100px;
+  padding: 30px 120px 30px 340px;
+  background: #040423;
+}
+
+.container {
+  border-radius: 20px;
+  background: #F2EDA2;
+  width: 220px;
+  height: 270px;
+  float: left;
+  margin: -70px 0px 0px 50px;
+  padding: 10px 20px 10px 20px;
+}
+
+.icons-container img{
+  padding: 30px 30px 30px 30px;
+  width: 150px;
+  height: 120px;
+}
+
+h1{
+  text-align: center;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #09005f;
+}
