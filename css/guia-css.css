@@ -1,0 +1,30 @@
+html, body{
+  font-family: 'Rubik', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(180deg, hsla(210, 100%, 100%, 0.6) 0%, hsla(180, 100%, 99%, 1) 0%, hsla(75, 6%, 87%, 1) 100%, hsla(348, 100%, 99%, 1) 100%);
+}
+
+#cover{
+  background: url('https://image.freepik.com/vetores-gratis/linguagens-de-programacao-css-e-html-programacao-de-computadores-codificacao-ti-personagem-de-desenho-animado-de-programador-feminino-software-desenvolvimento-de-sites_335657-760.jpg');
+}
+
+#table-description-fonts {
+  text-align: center;
+}
+
+#serif td{
+    font-family: "Georgia", serif;
+}
+
+#sans-serif td{
+  font-family: "Helvetica", sans-serif;
+}
+
+#cursive td{
+  font-family: "Dancing Script", cursive;
+}
+
+#comic td{
+  font-family: "Comic Sans MS", comic;
+}

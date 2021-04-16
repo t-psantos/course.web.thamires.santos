@@ -10,6 +10,7 @@
 
     <link rel="icon" href="img/icon.png"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/guia-css.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
   </head>
@@ -17,7 +18,7 @@
 
   <body>
       <header>
-        <nav id="navBar">
+        <nav id="navbar">
           <img src="img/codeCharmoso.png" width="170px" height="40px" title="logotipo da página" alt="retangulo de borda espessa preta com uma divisória.
           Em seu lado esquerdo o fundo é branco e em destaque está a letra "C" em azul. Do lado direito o fundo é preto com
           a escrita "codeCharmoso" em branco"/><br/><br/>
@@ -33,7 +34,7 @@
 
     <div id="contentPage">
     <section class="content">
-      <header> <h1>Introdução</h1> </header>
+      <header> <h1>Introdução ao CSS</h1> </header>
       <article>
       <p>E aí, beleza?<br/><br/>
       Depois do nosso <a href="index.html">guia sobre HTML</a>, chegou o momento de falarmos sobre o CSS. Sigla para
@@ -64,14 +65,14 @@
       <article>
         Os elementos básicos são as Tags HTML, #id e .classe.<br/><br/>
         A estrutura básica de um código CSS é definida por:<br/><br/>
-        <img src="img/css.png" title="Estrutura Básica CSS" alt="imagem representando estrutura basica de um código CSS"/><br/><br/><hr/>
+        <img src="img/css.png" title="Estrutura Básica CSS" alt="imagem representando estrutura basica de um código CSS"/><br/><br/>
       </article>
     </section>
 
     <section>
       <header> <h2>Principais Propriedades<a name="propriedades"/></h2> </header>
       <article>
-        Existem diversas propriedades que podemos alterar no CSS, algumas delas são: background, font, text, border, margin, padding, width, height, etc.<br/><br/><hr/>
+        Existem diversas propriedades que podemos alterar no CSS, algumas delas são: background, font, text, border, margin, padding, width, height, etc.<br/><br/>
       </article>
     </section>
 
@@ -83,8 +84,7 @@
       fosse em letra cursiva? Estranho, certo?<br/><br/>
       Partindo desse ponto, podemos classificar as fontes mais comuns, a imagem que passam e onde normalmente as encontramos:<br/><br/>
 
-      <div class="table">
-        <table border="1">
+        <table class="tables" id="table-description-fonts">
           <thead>
             <tr>
               <th>Fonte</th>
@@ -95,28 +95,28 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="serif">
               <td>Serifada</td>
               <td>Pés nas letras(serifas)</td>
               <td>Seriedade, tradição, respeito, confiança</td>
               <td>Livros, textos longos</td>
               <td>Zara, Tiffany & Co, Madero</td>
             </tr>
-            <tr>
+            <tr id="sans-serif">
               <td>Não-serifada</td>
               <td>Linhas retas e simples</td>
               <td>Clareza, jovialidade, refinado</td>
               <td>Sites, logotipos(principalmente de startups)</td>
               <td>LinkedIn, Calvin Klein, YouTube</td>
             </tr>
-            <tr>
+            <tr id="cursive">
               <td>Cursiva</td>
               <td>Semelhante à caligrafia, caracóis</td>
               <td>Elegância, artístico, liberdade</td>
               <td>Cartas, logotipos</td>
               <td>Coca-Cola, Instagram, Cadillac</td>
             </tr>
-            <tr>
+            <tr id="comic">
               <td>Cômicas</td>
               <td>Tipos únicos e atraentes</td>
               <td>Singularidade, originalidade, divertido, criativo</td>
@@ -125,8 +125,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </section><br/><br/><hr>
+    </section><br/><br/>
 
     <section>
       <header> <h2>Escolhendo as cores<a name="cores"/></h2> </header>
@@ -138,13 +137,14 @@
         cérebro as percebem. Embora eu não seja nenhuma expert sobre esse assunto, separei algumas cores e a que normalmente elas são
         associadas baseada em diversos estudos: <br/><br/>
 
-        <div class="table">
-          <table>
+          <table class="tables" align="center">
             <thead>
               <tr>
                 <th>Cor</th>
                 <th>Associação</th>
               </tr>
+              </thead>
+              <tbody>
               <tr>
                 <td>Vermelho</td>
                 <td>Energia, Paixão, Romance, Calor, Romance</td>
@@ -161,16 +161,15 @@
                 <td>Laranja</td>
                 <td>Entusiasmo, Cordialidade, Jovialidade</td>
               </tr>
-            </thead>
-          </table>
-        </div><br/>
+            </tbody>
+          </table><br/>
 
         Existem também alguns sites bem interessantes que podem te ajudar na escolha das cores como: <a href="https://coolors.co/" target="_blank">Coolors</a>,
         <a href="https://picular.co/" target="_blank"> Picular</a>, <a href="https://color.adobe.com/pt/create/image" target="_blank">Color Adobe</a>,
         <a href="https://contrastchecker.com/" target="_blank">ContrastChecker</a> entre outros.
 
         </article>
-    </section>
+    </section><br/>
 
     <div class="finalContent">
       É isso pessoal, por hoje encerramos nossa aulinha de CSS :) <br/><br/>
